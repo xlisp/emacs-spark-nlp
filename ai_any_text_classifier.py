@@ -10,6 +10,7 @@ from mpl_toolkits.mplot3d import Axes3D
 import faiss
 from sklearn.decomposition import PCA
 from utils.file_list import find_files_with_chinese_names
+from utils.md_todos import get_todo_items
 
 def get_embedding(text):
     response = requests.post('http://localhost:11434/api/embeddings', json={

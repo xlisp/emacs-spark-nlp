@@ -4,6 +4,7 @@
 ## Feature
 
 - [x] File classification (matching rules)
+- [x] Filter markdown todos
 - [ ] Log classification
 - [ ] Git log classification
 - [ ] File sorting
