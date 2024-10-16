@@ -7,27 +7,9 @@ from sklearn.manifold import TSNE
 import requests
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-import faiss  # Replacing LMDB with FAISS
+import faiss
 from sklearn.decomposition import PCA
-
-directory="/Users/clojure/Desktop/new111机器打败机器"
-
-def find_files_with_chinese_names():
-    chinese_file_paths = []
-    
-    # Regular expression to match Chinese characters
-    chinese_pattern = re.compile(r'[\u4e00-\u9fff]+')
-
-    # Walk through the directory
-    for root, dirs, files in os.walk(directory):
-        for file in files:
-            # Check if the file name contains any Chinese characters
-            if chinese_pattern.search(file):
-                # Add the full path to the result list
-                #chinese_file_paths.append(("", os.path.join(root, file)))
-                chinese_file_paths.append(("", file))
-    
-    return chinese_file_paths
+from utils.file_list import find_files_with_chinese_names
 
 def get_embedding(text):
     response = requests.post('http://localhost:11434/api/embeddings', json={
