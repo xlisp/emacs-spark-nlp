@@ -10,7 +10,7 @@
 - [ ] Visualization operate & process
 - [ ] Support GPT ask for search or sorting
 
-## init
+## Init
 
 ```
 conda create -n ai-any-text-classifier python=3.11
@@ -18,3 +18,8 @@ conda activate ai-any-text-classifier
 poetry install
 
 ```
+
+## Visualization
+
+![](./visualization.gif)
+
