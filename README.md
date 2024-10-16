@@ -1,4 +1,5 @@
 # AI any text classifier & sorting
+* Why: When your log files are very large and there are so many of them, and you don't know where to start, you can use ai-any-text-classifier to classify your logs or files, git logs and other texts, so that you can clearly see where the relevant information is.
 
 ## Feature
 
@@ -7,6 +8,7 @@
 - [ ] Git log classification
 - [ ] File sorting
 - [ ] Visualization operate & process
+- [ ] Support GPT ask for search or sorting
 
 ## init
 
