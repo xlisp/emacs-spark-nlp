@@ -13,11 +13,16 @@
 
 ## Init
 
-```
+* Setup python env
+```sh
 conda create -n ai-any-text-clusterer python=3.11
 conda activate ai-any-text-clusterer
 poetry install
+```
+* [Ollama](https://ollama.com/) run embed model
 
+```sh
+ollama run nomic-embed-text
 ```
 
 ## Visualization
