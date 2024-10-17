@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "ai-any-text-classifier"
+name = "ai-any-text-clusterer"
 version = "0.1.0"
 description = ""
 authors = ["stevechan <chanshunli@gmail.com>"]
