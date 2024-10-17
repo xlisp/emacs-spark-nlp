@@ -20,9 +20,15 @@ conda activate ai-any-text-clusterer
 poetry install
 ```
 * [Ollama](https://ollama.com/) run embed model
-
 ```sh
 ollama run nomic-embed-text
+```
+
+## Usage
+* command
+```sh
+# function name: find_files_with_chinese_names, get_todo_items ...
+python ai_any_text_clusterer.py <function_name> <index_file_name>
 ```
 
 ## Visualization
