@@ -5,8 +5,8 @@
 
 - [x] File clustering (matching rules)
 - [x] Filter markdown todos
+- [x] Git log clustering
 - [ ] Log clustering
-- [ ] Git log clustering
 - [ ] File sorting
 - [ ] Visualization operate & process
 - [ ] Support GPT ask for search or sorting
@@ -27,7 +27,7 @@ ollama run nomic-embed-text
 ## Usage
 * command
 ```sh
-# function name: find_files_with_chinese_names, get_todo_items ...
+# function name: find_files_with_chinese_names, get_todo_items, get_git_log, ...
 python ai_any_text_clusterer.py <function_name> <index_file_name>
 ```
 
