@@ -103,12 +103,14 @@ def visualize_clusters_3d(embeddings, labels, cluster_centers, todo_items):
     plt.show()
 
 def main():
-    if len(sys.argv) != 3:
-        print("Usage: python script.py <function_name> <index_file_name>")
+
+    if len(sys.argv) != 4:
+        print("Usage: python script.py <function_name> <index_file_name> <n_clusters>")
         sys.exit(1)
 
     function_name = sys.argv[1]
     index_file_name = sys.argv[2]
+    n_clusters = int(sys.argv[3])
 
     if function_name == "find_files_with_chinese_names":
         todo_items = find_files_with_chinese_names()
@@ -122,7 +124,7 @@ def main():
 
     embeddings = get_or_calculate_embeddings(todo_items, index_file_name)
 
-    n_clusters = min(18, len(todo_items))
+    #n_clusters = min(18, len(todo_items))
 
     groups, labels, cluster_centers = group_todos(todo_items, embeddings, n_clusters)
 

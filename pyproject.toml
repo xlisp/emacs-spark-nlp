@@ -10,7 +10,7 @@ python = "^3.11"
 numpy = "^2.1.2"
 requests = "^2.32.3"
 matplotlib = "^3.9.2"
-#faiss = "^1.5.3"
+faiss-cpu = "^1.9.0"
 scikit-learn = "^1.5.2"
 
 
