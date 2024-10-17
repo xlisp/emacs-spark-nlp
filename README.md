@@ -33,7 +33,7 @@ python ai_any_text_clusterer.py <function_name> <index_file_name> <n_clusters>
 ```
 * run git log clusterer
 ```sh
-$ ai-any-text-clusterer  main @ poetry run python ai_any_text_clusterer.py get_git_log get_git_log.index 5
+$ ai-any-text-clusterer  main @ poetry run python ai_any_text_clusterer.py get_git_log get_git_log.index 5 /Users/clojure/Desktop/ai-any-text-clusterer
 Loading embeddings from FAISS index...
 Group 1:
   [f9816067d95d20ba18cf3e8238ca3c0be252866e] Add git log

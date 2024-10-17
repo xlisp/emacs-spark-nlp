@@ -104,20 +104,21 @@ def visualize_clusters_3d(embeddings, labels, cluster_centers, todo_items):
 
 def main():
 
-    if len(sys.argv) != 4:
-        print("Usage: python script.py <function_name> <index_file_name> <n_clusters>")
+    if len(sys.argv) != 5:
+        print("Usage: python script.py <function_name> <index_file_name> <n_clusters> <work-path>")
         sys.exit(1)
 
     function_name = sys.argv[1]
     index_file_name = sys.argv[2]
     n_clusters = int(sys.argv[3])
+    work_path = sys.argv[4]
 
     if function_name == "find_files_with_chinese_names":
-        todo_items = find_files_with_chinese_names()
+        todo_items = find_files_with_chinese_names(work_path)
     elif function_name == "get_todo_items":
-        todo_items = get_todo_items()
+        todo_items = get_todo_items(work_path)
     elif function_name == "get_git_log":
-        todo_items = get_git_log()
+        todo_items = get_git_log(work_path)
     else:
         print(f"Unknown function: {function_name}")
         sys.exit(1)
