@@ -3,10 +3,10 @@
 
 ## Feature
 
-- [x] File classification (matching rules)
+- [x] File clustering (matching rules)
 - [x] Filter markdown todos
-- [ ] Log classification
-- [ ] Git log classification
+- [ ] Log clustering
+- [ ] Git log clustering
 - [ ] File sorting
 - [ ] Visualization operate & process
 - [ ] Support GPT ask for search or sorting
