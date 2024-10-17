@@ -29,7 +29,7 @@ ollama run nomic-embed-text
 ```sh
 # function name: find_files_with_chinese_names, get_todo_items, get_git_log, ...
 # When there are a lot of content or files, it is recommended that the n_clusters value is larger, such as 20. When there are fewer files, the n_clusters value is recommended to be 5
-python ai_any_text_clusterer.py <function_name> <index_file_name> <n_clusters>
+python ai_any_text_clusterer.py <function_name> <index_file_name> <n_clusters> <work_path>
 ```
 * run git log clusterer
 ```sh
