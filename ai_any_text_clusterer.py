@@ -11,7 +11,7 @@ import faiss
 from sklearn.decomposition import PCA
 import sys
 from utils.file_list import find_files_with_chinese_names
-from utils.md_todos import get_todo_items
+from utils.md_todos import get_todo_items, get_pattern_items
 from utils.git_log import get_git_log
 
 def get_embedding(text):
@@ -104,7 +104,7 @@ def visualize_clusters_3d(embeddings, labels, cluster_centers, todo_items):
 
 def main():
 
-    if len(sys.argv) != 5:
+    if len(sys.argv) < 5:
         print("Usage: python script.py <function_name> <index_file_name> <n_clusters> <work-path>")
         sys.exit(1)
 
@@ -112,11 +112,15 @@ def main():
     index_file_name = sys.argv[2]
     n_clusters = int(sys.argv[3])
     work_path = sys.argv[4]
+    # is option
+    pattern = sys.argv[5]
 
     if function_name == "find_files_with_chinese_names":
         todo_items = find_files_with_chinese_names(work_path)
     elif function_name == "get_todo_items":
         todo_items = get_todo_items(work_path)
+    elif function_name == "get_pattern_items":
+        todo_items = get_pattern_items(work_path, pattern)
     elif function_name == "get_git_log":
         todo_items = get_git_log(work_path)
     else:
