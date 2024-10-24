@@ -6,6 +6,7 @@
 - [x] File clustering (matching rules)
 - [x] Filter markdown todos or other pattern
 - [x] Git log clustering
+- [ ] process status clustering (pipe as input)
 - [ ] Log clustering
 - [ ] File sorting
 - [ ] Visualization operate & process
