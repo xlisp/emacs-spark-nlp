@@ -1,3 +1,4 @@
 *.index
 __pycache__/
-
+*.txt
+*.log
